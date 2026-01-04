@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  transition: background-color .3s;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 54px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+
+  .header {
+    cursor: default;
+  }
+  &:hover:not(.header) {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  &:not(:last-child) {
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      content: "";
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+  padding: 12px;
+
+  img {
+    border-radius: 8px;
+    width: 40px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    z-index: 10;
+    all: unset;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+    padding: 4px 8px;
+    height: 100%;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

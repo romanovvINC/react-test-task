@@ -1,0 +1,4 @@
+.container {
+  max-width: var(--desktop-content-width);
+  margin: calc(var(--header-height) + var(--big-gap)) auto var(--big-gap);
+}

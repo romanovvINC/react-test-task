@@ -1,0 +1,18 @@
+.container {
+  background:var(--transparent-bg-1);
+  backdrop-filter: var(--transparent-bg-1-blur);
+  height: var(--header-height);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  .nav {
+    height: 100%;
+    max-width: var(--desktop-content-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: left;
+  }
+}

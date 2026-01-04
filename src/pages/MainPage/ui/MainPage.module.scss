@@ -1,0 +1,26 @@
+.container {
+  max-width: var(--desktop-content-width);
+  margin: calc(var(--header-height) + var(--big-gap)) auto var(--big-gap);
+  height: calc(100dvh - var(--header-height) - var(--big-gap));
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  button {
+    all: unset;
+    transition: all .15s;
+    padding: 12px 16px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    background: purple;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

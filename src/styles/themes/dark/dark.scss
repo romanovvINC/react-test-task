@@ -1,0 +1,10 @@
+:root {
+  //backgrounds
+  --bg-purple-gradient: linear-gradient(30deg, #08004e 0, #2a004e 50%, #3d0025 100%);
+  --transparent-bg-1: rgba(0, 0, 0, 0.2);
+  --transparent-bg-2: rgba(0, 0, 0, 0.4);
+
+  //filters
+  --transparent-bg-1-blur: blur(16px);
+  --transparent-bg-2-blur: blur(32px);
+}

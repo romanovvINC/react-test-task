@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  width: fit-content;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  &:hover {
+    transition: all .3s;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &.active {
+    background-color: rgba(255, 255, 255, 1);
+    color: purple;
+    &:hover {
+      background-color: rgb(250, 191, 255);
+    }
+  }
+  span {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    line-height: 14px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+}

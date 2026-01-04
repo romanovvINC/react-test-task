@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/node": "^25.0.3",
+    "clsx": "^2.1.1",
+    "mobx": "^6.15.0",
+    "mobx-react-lite": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-loading-skeleton": "^3.5.0",
+    "react-router-dom": "^7.11.0",
+    "react-scripts": "5.0.1",
+    "uuid": "^13.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +37,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-router-dom": "^5.3.3",
+    "sass": "^1.97.1",
+    "typescript": "^5.9.3"
   }
 }
